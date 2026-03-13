@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --gold: #FFD700;
+  --gold-dark: #B8860B;
+  --red: #CC0000;
+  --dark: #1a1a2e;
+  --darker: #0c0c19;
+  --card-bg: #16213e;
+  --text-light: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--darker);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;      
+  background-blend-mode: screen;
+  padding: 60px 20px 80px;
+  position: relative;
+}
+
+
+
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.title {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--gold);
+  letter-spacing: 4px;
+  line-height: 1;
+  text-shadow:
+    4px 4px 0 var(--gold-dark),
+    8px 8px 0 rgba(0,0,0,0.3),
+    0 0 80px rgba(206, 170, 12, 0.409);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
